@@ -110,7 +110,10 @@
                     "kind": "PrometheusTimeSeriesQuery",
                     "spec": {
                       "query": "up",
-                      "datasource": "$datasourceVariable"
+                      "datasource": {
+                        "kind": "PrometheusDatasource",
+                        "name": "$datasourceVariable"
+                      }
                     }
                   }
                 }
